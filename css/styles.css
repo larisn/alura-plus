@@ -1,0 +1,163 @@
+@import url(reset.css);
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("../imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    color: white;
+    background-color: #005ac7;
+}
+
+.botao_secundario {
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.botao__secundario:hover {
+    color: var(--botao-azul);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 75%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+}
+
+.dispositivos__titulo {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.lista__item {
+    font-size: 24px;
+}
+
+.lista__link {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #167BF7;
+}
+
+.rodape {
+    text-align: center;
+    margin: 3em;
+    margin-bottom: 30px;
+}
+
+.rodape__paragrafo1 {
+    margin-top: 25px;
+    color: var(--cinza-secundario);
+}
+
+.rodape__paragrafo2 {
+    margin-top: 20px;
+    color: var(--cinza-secundario);
+}
+
+.logo__alura {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
